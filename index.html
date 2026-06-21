@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Mussammil MK | Full Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Mohammed Mussammil MK, an MCA graduate and certified Full Stack Python & Django Developer. Looking for software engineering opportunities.">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans (Body/Sans) & Fraunces (Headings/Editorial Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Radial mouse glow backing -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">MK<span class="dot">.</span>MUSSAMMIL</a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#hr-zone" class="nav-link">Why Me?</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Work</a>
+                <a href="#terminal-section" class="nav-link">Terminal</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline nav-btn">Invite for Coffee</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="about">
+            <div class="container hero-container">
+                <div class="hero-status">
+                    <span class="pulse-indicator"></span>
+                    <span class="status-text">Seeking First IT Role — Ready to Deploy</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    A Fresh Mind with a <br>
+                    <span class="serif text-gradient">Master's Toolkit.</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Hi, I'm <strong class="text-highlight">Mohammed Mussammil MK</strong>. I hold a Master of Computer Applications (MCA) and a solid foundation in Python, Django, SQL, and Networking. I craft clean backend architectures and responsive user interfaces.
+                </p>
+
+                <div class="hero-quote-box">
+                    <p class="hero-quote">
+                        "Every senior developer was once a fresher who got their first chance. Let's make this your best investment of the year."
+                    </p>
+                </div>
+
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#projects" class="btn btn-secondary">Explore My Work</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">MCA</span>
+                        <span class="stat-label">Postgraduate Degree</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">1 Year</span>
+                        <span class="stat-label">Sinet Internship ('S' Grade)</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Supervised Projects</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HR Zone: Why Mohammed Mussammil MK? -->
+        <section class="hr-zone-section" id="hr-zone">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Recruiter's Sanctuary</span>
+                    <h2 class="section-title">The HR Decoder <span class="serif">&amp;</span> Pitch</h2>
+                    <p class="section-subtitle">Let's address the "fresher dilemma" head-on. Click through the cards below to see why hiring a fresh, motivated mind is the best strategic move for your team.</p>
+                </div>
+
+                <div class="hr-card-deck-wrapper">
+                    <div class="hr-card-deck" id="hr-deck">
+                        <!-- Card 1 -->
+                        <div class="hr-card active" data-index="0">
+                            <div class="card-num">01 / 04</div>
+                            <div class="card-icon"><i class="fa-solid fa-wind"></i></div>
+                            <h3 class="card-title">The Clean Canvas</h3>
+                            <p class="card-desc">
+                                <strong>No legacy habits or biases.</strong> Senior developers often carry architectural prejudices or formatting habits from their past projects. I come with a completely clean slate, ready to adopt your team's specific guidelines, linting rules, and workflow processes without resistance.
+                            </p>
+                            <div class="card-badge">Mussammil's Adaptability: 100%</div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="hr-card" data-index="1">
+                            <div class="card-num">02 / 04</div>
+                            <div class="card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                            <h3 class="card-title">Peak Passion &amp; ROI</h3>
+                            <p class="card-desc">
+                                <strong>Driven by curiosity, not routine.</strong> For me, programming isn't just a 9-to-5 chore yet. Every bug resolved and feature built is a milestone of growth. You get high motivation, relentless energy, and absolute commitment to your project, at a very cost-effective initial investment.
+                            </p>
+                            <div class="card-badge">Energy Level: Overcharged</div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="hr-card" data-index="2">
+                            <div class="card-num">03 / 04</div>
+                            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h3 class="card-title">MCA Rigorous Toolkit</h3>
+                            <p class="card-desc">
+                                <strong>Strong academic fundamentals.</strong> My Master of Computer Applications specialization in Advanced Programming and Networking means I don't just "glue APIs together." I understand network layers, database indexing, complexity analysis, and object-oriented architectures.
+                            </p>
+                            <div class="card-badge">Degree: Master of Computer Applications</div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="hr-card" data-index="3">
+                            <div class="card-num">04 / 04</div>
+                            <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+                            <h3 class="card-title">Certified Python &amp; Django</h3>
+                            <p class="card-desc">
+                                <strong>Proven professional growth.</strong> I spent a full year at Sinet Institute, earning an 'S' grade in Web Development. Plus, as a Junior Project Supervisor, I've supported 3+ projects, helping with debugging, frontend integration, and MySQL database administration.
+                            </p>
+                            <div class="card-badge">S-Grade Python/Django Professional</div>
+                        </div>
+                    </div>
+                    
+                    <div class="deck-controls">
+                        <button class="deck-btn btn-prev" id="prev-card" aria-label="Previous card"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="deck-dots" id="deck-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="deck-btn btn-next" id="next-card" aria-label="Next card"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Capabilities</span>
+                    <h2 class="section-title">The Skills Matrix</h2>
+                    <p class="section-subtitle">Hover over the skills below to see how I leverage them in development. Structured, solid, and ready for deployment.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Backend -->
+                    <div class="skills-category-card">
+                        <h3 class="category-title"><i class="fa-solid fa-server"></i> Backend Engineering</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item" data-tooltip="My primary logic builder for writing script tools, algorithms, and models.">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Highly proficient at building secure, structured MVC apps, ORM models, and RESTful APIs.">
+                                <span class="skill-name">Django Framework</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Strong understanding of OOP concepts, memory management, and algorithmic design.">
+                                <span class="skill-name">C++ &amp; Java (Basic)</span>
+                                <span class="skill-level">Intermediate</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Databases & Networks -->
+                    <div class="skills-category-card">
+                        <h3 class="category-title"><i class="fa-solid fa-database"></i> Databases &amp; Architecture</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item" data-tooltip="Writing efficient JOINs, indexing, structure design, and schema maintenance.">
+                                <span class="skill-name">MySQL / SQL</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Academically specialized in advanced networking protocols, routing, and configurations.">
+                                <span class="skill-name">Network Administration</span>
+                                <span class="skill-level">Specialist</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Adept at normalizing databases, structural optimization, and query tuning.">
+                                <span class="skill-name">Database Management</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Frontend Craft -->
+                    <div class="skills-category-card">
+                        <h3 class="category-title"><i class="fa-solid fa-code"></i> Frontend Craft</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item" data-tooltip="Semantic structures, layouts, accessible markup, and modern SEO best practices.">
+                                <span class="skill-name">HTML5 &amp; CSS3</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Responsive design framework for rapid prototyping and sleek interface foundations.">
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Adding dynamic interaction, DOM manipulations, AJAX calls, and micro-animations.">
+                                <span class="skill-name">jQuery &amp; JavaScript</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4: Tools & Soft Skills -->
+                    <div class="skills-category-card">
+                        <h3 class="category-title"><i class="fa-solid fa-screwdriver-wrench"></i> Workflow &amp; Communication</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item" data-tooltip="Version control, branching strategies, commits, and collaborative git workflows.">
+                                <span class="skill-name">Git &amp; VS Code</span>
+                                <span class="skill-level">Intermediate</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Excellent coordination, leadership, and communication honed by managing 3+ projects.">
+                                <span class="skill-name">Team Coordination</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item" data-tooltip="Professional proficiency in English, native speaker in Malayalam.">
+                                <span class="skill-name">Languages (Eng/Mal)</span>
+                                <span class="skill-level">Fluent</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tooltip-container" id="tooltip-container">
+                    Hover over any skill to reveal its operational context.
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Demonstrated Capabilities</span>
+                    <h2 class="section-title">Experience &amp; Selected Projects</h2>
+                    <p class="section-subtitle">A record of my practical experiences, academic supervision, and software projects.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item left scroll-reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">One Year Program</span>
+                            <h3 class="timeline-title">Python &amp; Django Web Intern</h3>
+                            <h4 class="timeline-org">Sinet Institute</h4>
+                            <p class="timeline-desc">
+                                Completed a rigorous full-year certification course and obtained an **'S' grade** (Superlative). Developed a deep understanding of core Python algorithms, Django web application frameworks, MySQL database administration, CSS3, and interactive frontend implementation using jQuery.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">jQuery</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item right scroll-reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-users-gear"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Contract / Academic Project</span>
+                            <h3 class="timeline-title">Junior Project Supervisor</h3>
+                            <h4 class="timeline-org">Academic Collaborations</h4>
+                            <p class="timeline-desc">
+                                Guided, reviewed, and supported **3+ software projects** through development and deployment. Assisted with front-end templates, debugged complex Python code, designed and integrated MySQL databases, and contributed significantly to documentation, unit testing, and Git operations.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">Project Management</span>
+                                <span class="tag">Database Integration</span>
+                                <span class="tag">Debugging</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 1 -->
+                    <div class="timeline-item left scroll-reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-syringe"></i></div>
+                        <div class="timeline-content highlight-card">
+                            <span class="timeline-date">Featured Project</span>
+                            <h3 class="timeline-title">Vacsp — Vaccine Support System</h3>
+                            <h4 class="timeline-org">Web-Based Solution</h4>
+                            <p class="timeline-desc">
+                                A dynamic, centralized web system designed to digitize and automate vaccination registration, stock management, and scheduling. Features real-time tracking of vaccine doses, email notification integration, and analytics dashboards aimed at optimizing local public health workflow layouts.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">Django MVC</span>
+                                <span class="tag">MySQL Database</span>
+                                <span class="tag">Bootstrap 5</span>
+                                <span class="tag">Real-time Updates</span>
+                            </div>
+                            <div class="timeline-action">
+                                <a href="https://github.com/2-MK" target="_blank" rel="noopener noreferrer" class="btn-text">View Repository on GitHub <i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub CTA -->
+                <div class="github-cta-box">
+                    <div class="git-content">
+                        <i class="fa-brands fa-github git-big-icon"></i>
+                        <div>
+                            <h3>Want to review my source code repositories?</h3>
+                            <p>Explore my script repositories, basic C++/Java tools, and Web designs directly on GitHub.</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/2-MK" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Visit GitHub @2-MK <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Academic Foundation</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="edu-duration">Current / Recent</span>
+                        <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+                        <h4 class="edu-school">APJ Abdul Kalam Technological University</h4>
+                        <p class="edu-detail">Specialized in **Advanced Programming &amp; Computer Networks**. Focused heavily on software engineering methodologies, database design principles, network security, and administrative systems.</p>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+                        <span class="edu-duration">Completed</span>
+                        <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+                        <h4 class="edu-school">University of Calicut</h4>
+                        <p class="edu-detail">Built solid fundamentals in computer architectures, basic programming paradigms (C, C++, Java), and basic web design methodologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal -->
+        <section class="terminal-section" id="terminal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">For the Technical Recruiter</span>
+                    <h2 class="section-title">The Interactive Shell</h2>
+                    <p class="section-subtitle">Are you a command-line fan? Query Mussammil's dossier directly via our virtual terminal shell. Type commands to extract structured responses.</p>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots">
+                            <span class="term-dot close"></span>
+                            <span class="term-dot minimize"></span>
+                            <span class="term-dot maximize"></span>
+                        </div>
+                        <div class="terminal-title">mussammil-shell@port:~</div>
+                        <div class="terminal-status"><i class="fa-solid fa-lock"></i> SSL Secured</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-line">Welcome to Mussammil's Interactive Shell v1.0.0.</div>
+                        <div class="terminal-line">Type <span class="term-highlight">help</span> to view all available commands.</div>
+                        <div class="terminal-line">&nbsp;</div>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt">guest@mussammil-port:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" autofocus placeholder="Type 'help' and press Enter..." aria-label="Terminal input">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build-A-Developer Checklist -->
+        <section class="builder-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Interactive Hiring Tool</span>
+                    <h2 class="section-title">Build-A-Developer <span class="serif">Widget</span></h2>
+                    <p class="section-subtitle">Customize the exact qualities you are looking for in your next hire, and see if Mohammed Mussammil MK fits your criteria!</p>
+                </div>
+
+                <div class="builder-card">
+                    <div class="builder-options">
+                        <h3>Select Required Attributes:</h3>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="attr-mca" checked disabled>
+                                <span class="custom-checkbox"></span>
+                                <span class="check-text">Master of Computer Applications (MCA) Degree</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="attr-python" checked disabled>
+                                <span class="custom-checkbox"></span>
+                                <span class="check-text">Python &amp; Django Web Capabilities</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="attr-db" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="check-text">MySQL Database Administration Knowledge</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="attr-git" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="check-text">Version Control &amp; Team Collaboration (Git)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="attr-adaptable" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="check-text">Adaptable "Clean Canvas" Attitude</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="attr-comms" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="check-text">Excellent Verbal &amp; Written Communication</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="builder-result">
+                        <h3>Match Results:</h3>
+                        <div class="match-score-box">
+                            <span class="match-percentage" id="match-percent">100%</span>
+                            <span class="match-label">Developer Compatibility Score</span>
+                        </div>
+                        <p class="match-description" id="match-description">
+                            "Excellent match! Mohammed Mussammil MK holds a strong academic foundation (MCA) and a full year of web development experience. Ready to integrate into your backend pipelines immediately."
+                        </p>
+                        <button class="btn btn-primary" id="btn-copy-pitch">Copy Selection Pitch</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Let's Open a Conversation</span>
+                    <h2 class="section-title">Ready to hire a <span class="serif">fresher</span>?</h2>
+                    <p class="section-subtitle">Let's discuss how I can contribute to your project or team. Leave a message, shoot an email, or call me directly.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Details -->
+                    <div class="contact-info-panel">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-content">
+                                <span class="info-title">Drop an Email</span>
+                                <a href="mailto:mkmhdmussammil@gmail.com" class="info-link">mkmhdmussammil@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-content">
+                                <span class="info-title">Direct Dial</span>
+                                <a href="tel:+919074577857" class="info-link">+91 9074577857</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div class="info-content">
+                                <span class="info-title">Current Base</span>
+                                <span class="info-link">679321, Kerala, India</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links-row">
+                            <a href="https://linkedin.com/in/muzammil-mk-48461533a" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/2-MK" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" name="name" required placeholder="What should I call you?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" name="email" required placeholder="name@company.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" placeholder="e.g., Job Opportunity, Interview Invitation">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="#" class="logo">MK<span class="dot">.</span>MUSSAMMIL</a>
+                <p class="footer-quote">
+                    "Passion is the engine. Adaptability is the rudder."
+                </p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/muzammil-mk-48461533a" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/2-MK" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:mkmhdmussammil@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+919074577857"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Mohammed Mussammil MK. Designed for impact. All rights reserved.</p>
+                <a href="#" class="back-to-top" id="back-to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
