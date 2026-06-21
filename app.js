@@ -422,7 +422,7 @@ function initBuilderWidget() {
     calculateCompatibility();
 }
 
-/* --- 8. Contact Form Handler (Mailto Fallback) --- */
+/* --- 8. Contact Form Handler (Google Forms Integration) --- */
 function initContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
@@ -430,32 +430,45 @@ function initContactForm() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        const name = document.getElementById('form-name').value;
-        const email = document.getElementById('form-email').value;
-        const subject = document.getElementById('form-subject').value || "Portfolio Connection";
-        const message = document.getElementById('form-message').value;
-        
-        // Open user's email client
-        const mailtoUrl = `mailto:mkmhdmussammil@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
-        window.location.href = mailtoUrl;
-        
-        // Show visual feedback on the button
         const submitBtn = form.querySelector('.form-submit-btn');
         const originalText = submitBtn.innerHTML;
         
-        submitBtn.innerHTML = 'Opening Email Client... <i class="fa-solid fa-envelope-open-text"></i>';
-        submitBtn.style.backgroundColor = 'var(--color-secondary)';
-        submitBtn.style.color = 'var(--color-bg)';
+        submitBtn.innerHTML = 'Sending Message... <i class="fa-solid fa-spinner fa-spin"></i>';
+        submitBtn.disabled = true;
         
-        setTimeout(() => {
-            submitBtn.innerHTML = 'Message Initiated! ✓';
+        // Prepare Google Form payload
+        const formData = new FormData(form);
+        formData.append('fvv', '1');
+        formData.append('pageHistory', '0');
+        formData.append('fbzx', '-4191983194790358483');
+        
+        fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfKdK--ABL1XDuWRmKoLsSXXOfbB5Tp9TjbvncZaBfDw-IyaQ/formResponse', {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData
+        })
+        .then(() => {
+            // Visual success feedback
+            submitBtn.innerHTML = 'Message Sent Successfully! ✓';
+            submitBtn.style.backgroundColor = 'var(--color-secondary)';
+            submitBtn.style.color = 'var(--color-bg)';
             form.reset();
             
             setTimeout(() => {
                 submitBtn.innerHTML = originalText;
                 submitBtn.style.backgroundColor = '';
                 submitBtn.style.color = '';
+                submitBtn.disabled = false;
             }, 3000);
-        }, 1500);
+        })
+        .catch(err => {
+            console.error('Google Forms submission error:', err);
+            submitBtn.innerHTML = 'Error Sending. Try Again! ✗';
+            submitBtn.disabled = false;
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+            }, 3000);
+        });
     });
 }
