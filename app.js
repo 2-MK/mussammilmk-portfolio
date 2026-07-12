@@ -246,7 +246,15 @@ function initTerminal() {
 • Junior Project Supervisor
   - Guided 3+ projects, resolved database structures, debugged templates.
 • Vacsp (Vaccine Support System)
-  - Full-stack centralized vaccine administration app using Django/MySQL.`,
+  - Full-stack centralized vaccine administration app using Django/MySQL.
+• KAAM (Local Service Marketplace)
+  - Cross-platform mobile application using Flutter and Firebase.
+• Student Record App
+  - Collaborative student record system built with Django and Supabase.
+• MCA Gems 24–26
+  - Batch memory-sharing and online gallery platform built with Django.
+• AskyPro
+  - Python OpenCV tool transforming images/live video to ASCII art.`,
         education: `
 • Master of Computer Applications (MCA) | APJ Abdul Kalam Technological Univ.
   - Specialization in Advanced programming and networking.
